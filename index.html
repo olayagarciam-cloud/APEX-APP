@@ -812,15 +812,13 @@ function showReveal(p, t) {
     </div>`;
 
   document.getElementById('reveal-note').innerHTML =
-    `<strong style="color:var(--text);">Lógica aplicada:</strong> ${t.goalExplain}<br><br>` +
-    `<strong style="color:var(--text);">Proteína fija</strong> todos los días — la síntesis muscular no distingue entre entreno y descanso. ` +
-    `<strong style="color:var(--text);">Los carbos cambian por día</strong> porque son el combustible del entrenamiento de fuerza. ` +
-    `Las grasas se mantienen para soporte hormonal y articular.` +
-    (t.isAtFloor
-      ? `<br><br><span style="color:var(--amber);">⚠ El objetivo calórico fue ajustado al mínimo seguro (BMR ×1.15 = ${Math.round(t.bmr * 1.15)} kcal).</span>`
-      : '') +
-    `<br><br><span style="color:var(--text3);">Este cálculo es un punto de partida. Se afina con datos reales de peso, fuerza y medidas.</span>`;
-
+`<br><br><strong style="color:var(--text);">Cómo funciona tu plan:</strong><br><br>
+Proteína → fija para construir músculo<br>
+Carbos → cambian según tu entrenamiento<br>
+Calorías → ajustadas para progresar sin grasa<br><br>
+<span style="color:var(--text3);">
+Sigue tu día y ajusta sobre la marcha.
+</span>`
   document.getElementById('onb-reveal').classList.add('active');
 }
 
